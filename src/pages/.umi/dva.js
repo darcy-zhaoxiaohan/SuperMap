@@ -20,10 +20,10 @@ export function _onCreate() {
     app.use(plugin);
   });
   
-  app.model({ namespace: 'global', ...(require('C:/ZhaoXiaohan/demo eCharts/src/models/global.js').default) });
-app.model({ namespace: 'login', ...(require('C:/ZhaoXiaohan/demo eCharts/src/models/login.js').default) });
-app.model({ namespace: 'setting', ...(require('C:/ZhaoXiaohan/demo eCharts/src/models/setting.js').default) });
-app.model({ namespace: 'user', ...(require('C:/ZhaoXiaohan/demo eCharts/src/models/user.js').default) });
+  app.model({ namespace: 'global', ...(require('C:/ZhaoXiaohan/SuperMap/src/models/global.js').default) });
+app.model({ namespace: 'login', ...(require('C:/ZhaoXiaohan/SuperMap/src/models/login.js').default) });
+app.model({ namespace: 'setting', ...(require('C:/ZhaoXiaohan/SuperMap/src/models/setting.js').default) });
+app.model({ namespace: 'user', ...(require('C:/ZhaoXiaohan/SuperMap/src/models/user.js').default) });
   return app;
 }
 

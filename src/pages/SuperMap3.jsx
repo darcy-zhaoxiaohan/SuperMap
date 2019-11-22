@@ -63,6 +63,11 @@ export default class SuperMaps extends React.Component {
         pointVector.style = {fillColor: "red",strokeColor: "yellow",pointRadius:6};
         //添加矢量图形覆盖物
         vectorLayer.addFeatures(pointVector);
+        vectorLayer.events.on({ "click": this.addClickFeature });
+    }
+
+    addClickFeature = (e)=>{
+        console.log(e);
     }
 
     createMapVLayer = () => {

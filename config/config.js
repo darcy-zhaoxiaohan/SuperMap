@@ -162,12 +162,18 @@ export default {
               icon: 'crown',
               component: './SuperMap6'
             },
-            // {
-            //   path:'/superMap7',
-            //   name: '添加图层7',
-            //   icon: 'crown',
-            //   component: './SuperMap7'
-            // },
+            {
+              path:'/superMap7',
+              name: '添加图层7',
+              icon: 'crown',
+              component: './SuperMap7'
+            },
+            {
+              path:'/superMap8',
+              name: '添加图层8',
+              icon: 'crown',
+              component: './SuperMap8'
+            },
             {
               component: './404',
             },

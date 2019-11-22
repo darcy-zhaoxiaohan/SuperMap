@@ -3,7 +3,7 @@ import { Router as DefaultRouter, Route, Switch } from 'react-router-dom';
 import dynamic from 'umi/dynamic';
 import renderRoutes from 'umi/lib/renderRoutes';
 import history from '@tmp/history';
-import RendererWrapper0 from 'C:/ZhaoXiaohan/demo eCharts/src/pages/.umi/LocaleWrapper.jsx';
+import RendererWrapper0 from 'C:/ZhaoXiaohan/SuperMap/src/pages/.umi/LocaleWrapper.jsx';
 
 const Router = require('dva/router').routerRedux.ConnectedRouter;
 
@@ -21,7 +21,7 @@ const routes = [
       {
         component: () =>
           React.createElement(
-            require('C:/ZhaoXiaohan/demo eCharts/node_modules/umi-build-dev/lib/plugins/404/NotFound.js')
+            require('C:/ZhaoXiaohan/SuperMap/node_modules/umi-build-dev/lib/plugins/404/NotFound.js')
               .default,
             { pagesPath: 'src/pages', hasRoutesInConfig: true },
           ),
@@ -114,13 +114,27 @@ const routes = [
             exact: true,
           },
           {
+            path: '/superMap7',
+            name: '添加图层7',
+            icon: 'crown',
+            component: require('../SuperMap7').default,
+            exact: true,
+          },
+          {
+            path: '/superMap8',
+            name: '添加图层8',
+            icon: 'crown',
+            component: require('../SuperMap8').default,
+            exact: true,
+          },
+          {
             component: require('../404').default,
             exact: true,
           },
           {
             component: () =>
               React.createElement(
-                require('C:/ZhaoXiaohan/demo eCharts/node_modules/umi-build-dev/lib/plugins/404/NotFound.js')
+                require('C:/ZhaoXiaohan/SuperMap/node_modules/umi-build-dev/lib/plugins/404/NotFound.js')
                   .default,
                 { pagesPath: 'src/pages', hasRoutesInConfig: true },
               ),
@@ -134,7 +148,7 @@ const routes = [
       {
         component: () =>
           React.createElement(
-            require('C:/ZhaoXiaohan/demo eCharts/node_modules/umi-build-dev/lib/plugins/404/NotFound.js')
+            require('C:/ZhaoXiaohan/SuperMap/node_modules/umi-build-dev/lib/plugins/404/NotFound.js')
               .default,
             { pagesPath: 'src/pages', hasRoutesInConfig: true },
           ),
@@ -148,7 +162,7 @@ const routes = [
   {
     component: () =>
       React.createElement(
-        require('C:/ZhaoXiaohan/demo eCharts/node_modules/umi-build-dev/lib/plugins/404/NotFound.js')
+        require('C:/ZhaoXiaohan/SuperMap/node_modules/umi-build-dev/lib/plugins/404/NotFound.js')
           .default,
         { pagesPath: 'src/pages', hasRoutesInConfig: true },
       ),
